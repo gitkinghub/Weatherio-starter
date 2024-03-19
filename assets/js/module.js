@@ -44,9 +44,9 @@ export const getDate = function (dateUnix, timezone) {
 * @returns {string} Time string.
 */
 export const getTime = function (timeUnix, timezone) {
-    const date = new Date((timeUnix, timezone) * 1000);
+    const date = new Date((timeUnix + timezone) * 1000);
     const hours = date.getUTCHours();
-    const minutes = date.getUTCMinutes();
+    const minutes = String(date.getUTCMinutes()).padStart(2, '0'); // Use padStart to ensure two digits
     const period = hours >= 12 ? "PM" : "AM";
 
     return `${hours % 12 || 12}:${minutes} ${period}`;

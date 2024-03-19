@@ -1,7 +1,7 @@
 'use strict';
 
 import { updateWeather, error404 } from "./app.js";
-const defauLtlocation = "#/weather?lat=51.5073219&lon=-0.1276474" //London
+const defauLtlocation = "#/weather?lat=51.5073219&lon=-0.1276474"; // London
 
 const currentLocation = function () {
     window.navigator.geolocation.getCurrentPosition(res => {
