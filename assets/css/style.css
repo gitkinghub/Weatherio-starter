@@ -127,11 +127,22 @@ html{
 }
 
 body{
-  background-color: var(--background);
+  background-color: transparent;
   color: var(--on-background);
   font-size: var(--body-3);
   overflow: hidden;
 }
+
+/* threejs background */
+#threejs-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it's behind other content */
+}
+
 
 :focus-visible{
   outline: 2px solid var(--white);
@@ -146,7 +157,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: var(--white-alpha-8);
+  background-color: transparent;
   border-radius: var(--radius-pill);
 }
 
@@ -254,7 +265,10 @@ body{
 }
 
 .card{
-  background-color: var(--surface);
+  background-color: rgba(255, 255, 255, 0.1); /* Set the background color with some opacity */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Apply a shadow to create a glassmorphic effect */
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  border-radius: 16px; /* Add border radius for rounded corners */
   color: var(--0n-surface);
 }
 
