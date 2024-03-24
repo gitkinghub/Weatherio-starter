@@ -126,15 +126,17 @@ html{
   scroll-behavior: smooth;
 }
 
+/* modify this background color to your liking */
 body{
-  background-color: transparent;
+  background-color: var(--background);
   color: var(--on-background);
   font-size: var(--body-3);
   overflow: hidden;
 }
 
-/* threejs background */
+/* threejs background for the stars */
 #threejs-container {
+  display: none !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -265,9 +267,9 @@ body{
 }
 
 .card{
-  background-color: rgba(255, 255, 255, 0.1); /* Set the background color with some opacity */
+  background-color: var(--background); /* Set the background color with some opacity */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Apply a shadow to create a glassmorphic effect */
-  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  backdrop-filter: blur(10px); /*Apply a blur effect to the background*/
   border-radius: 16px; /* Add border radius for rounded corners */
   color: var(--0n-surface);
 }
