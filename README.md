@@ -53,5 +53,8 @@ This project is licensed under the [MIT License]
 - OpenWeather for providing the weather data API
 - Three.js community for the background animation resources
 
+## Images
+![image](https://github.com/gitkinghub/weatherio-starter/assets/93211264/82348b18-7f5b-43f5-b0fc-66036b0815bb)
 
-Project Link: Not yet Hosted
+![image](https://github.com/gitkinghub/weatherio-starter/assets/93211264/79f7f93c-5ed1-463e-ac58-8960e89a01a3)
+
